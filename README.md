@@ -1,9 +1,9 @@
-# VoxMod
 Hello all! This is my first mod I've ever done scripting for so hopefully it's a good one.
 
 Description
 This mod takes a folder of soundfiles and makes them available to play via 3D sound or global music in-game dynamically via an in-game dialog.
-As of now, there are 5 voices:
+As of now, there are 6 voices:
+-Alterra Personal Digital Assistant (PDA) from Subnautica
 -Central Autonomic Service System for Internal Emergencies (C.A.S.S.I.E.) from SCP: Secret Laboratory
 -Black Mesa Announcement System (BMAS) from Half-Life
 -Hazardous Environment Combat Unit (HECU) from Half-Life
@@ -23,7 +23,7 @@ The "Emanate from module" checkbox switches between local and global audio. Chec
 
 The textboxs under the checkbox will determine the range, volume, and pitch at which the sound can be heard. A value of 200 equates to about 50m. If not given, defaults to 200. Volume can range from 0 to 5, a 0 is changed automatically to 1. Pitch can range from 0.5 to 2.0, with 1.0 being normal. Changing pitch also changes length of the message. Volume and range are only available for local audio, range is not needed for global audio and each user can adjust audio on their own for global.
 
-Global audio volume is determined by Esc > Configure > Audio > "Scripted UI" slider. This may start very high or very low to start with, so be weary of blown eardrums and/or deafness.
+Global audio volume is determined by Esc > Configure > Audio > "Scripted UI" slider. This may start very high or very low to start with, so be weary of volume.
 
 The "Optional" checkbox enables/disables optional additional features for each voice, enabled by default.
 At the moment, the only optional setting is for CASSIE. If checked, it will play bell_start, bell_mid, and bell_end at the appropriate locations. These sounds are also available for you if you disable the option, but bell_mid will not be possible manually and will play ONLY the ambience for about a full 3 minutes. bell_mid only works for global audio, I had troubles with it lasting forever with local audio.
@@ -77,5 +77,5 @@ Please be aware that in a multiplayer server, you must instead do
 You could use these functions to setup triggers to say what you want, when you want it. If anyone creates a mission using some of these, please let me know as I would love to see a video.
 
 Credit
-Thanks to Valve, Northwood Studios, and MGM for the voicelines.
-Shamefully, I must also thank ChatGPT for my sanity. Getting into the Arma modding scene raw is difficult, especially when the BI forums are down that inform about crucial scripting fixes.
+Thanks to Valve, Northwood Studios, MGM, and Unknown Worlds Entertainment for the voicelines.
+I must also thank ChatGPT for my sanity, since BI forums are down.
